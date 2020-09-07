@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Java Script</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+	<p id="demo"></p>
+	<p id="demo1"></p>
+	<p id="demo2"></p>
+	<p id="demo3"></p>
+
+
+<script>
+    var answer1 = "It's alright";
+	var answer2 = 'He is called "Johnny"';
+	var answer3 = 'He is called "Johnny"'; 
+	var ans = answer3.slice(5,12);
+	
+	document.getElementById("demo").innerHTML =
+	answer1 + "<br>" + answer2.length + "<br>" + answer3; 
+
+	document.getElementById("demo1").innerHTML = typeof answer1;
+	
+	var str = "Please locate where 'locate' occurs!";
+	var pos = str.indexOf("locate");
+
+	document.getElementById("demo3").innerHTML = pos + "<br>" + ans;
+
+	if(answer2 == answer3){
+		document.getElementById("demo2").innerHTML = "string method";
+	}else{
+		document.getElementById("demo2").innerHTML = "false";
+	}
+
+</script>
+
+</body>
+</html>

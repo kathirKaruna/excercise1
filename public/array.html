@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+<button type="button" onclick="myFunct()">Click Me</button>
+<button type="button" onclick="myFunction()">Try Me</button>
+
+
+<p id="demo"></p>
+<p id="demo1"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+<p id="demo4"></p>
+<p id="demo5"></p>
+<p id="demo6"></p>
+
+
+
+
+<script>
+	var array = ["hi", "how", "are", "you"];
+               array.push("hello", "where");
+	 var list = array[2];
+	 var number_arr = [ 20, 30, 40 ]; 
+      number_arr.splice(0, 2); 
+
+	document.getElementById("demo").innerHTML = list;
+	document.getElementById("demo1").innerHTML = array.length;
+	document.getElementById("demo2").innerHTML = array;
+	document.getElementById("demo3").innerHTML = number_arr;
+    
+    function myFunct(){
+    	var removed = array.splice(2,2, "i", "am");
+    	document.getElementById("demo4").innerHTML = "New Array:<br>" + array;
+    	document.getElementById('demo5').innerHTML = "Removed Array:<br>" + removed;
+    }
+
+
+    var fruits, text, fLen, i;
+		fruits = ["Banana", "Orange", "Apple", "Mango"];
+		fLen = fruits.length;
+
+    function myFunction(){
+		text = "<ul>";
+		for (i = 0; i < fLen; i++) {
+		  text += "<li>" + fruits[i] + "</li>";
+		}
+		text += "</ul>";
+
+		document.getElementById("demo6").innerHTML = text;
+    }
+
+
+</script>
+</body>
+</html>
