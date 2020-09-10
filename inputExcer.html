@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Value Get Excercise</title>
+</head>
+
+<body>
+
+	
+	<label for="fname">First Name</label>
+	<input type="text" name="fname" id="input1" autocomplete="off"><br><br>
+	<label for="lname">Last Name</label>
+	<input type="text" name="lname" id="input2" autocomplete="off"><br><br>
+	<label for="lname">Address1</label>
+	<input type="text" name="add1" id="add1" autocomplete="off"><br><br>
+	<label for="lname">Address2</label>
+	<input type="text" name="add2" id="add2" autocomplete="off"><br><br>
+
+	<button onclick="obj()">Try Me</button>
+ 
+
+
+
+<script>
+	   
+	   var user = {
+	   	address:{}
+	   };
+
+	   function obj() {
+         user.fName = document.getElementById("input1").value;
+	     user.lName = document.getElementById("input2").value;
+	     user.add1 = document.getElementById("add1").value;
+	     user.add2 = document.getElementById("add2").value;
+	   }      
+      console.log(user);
+
+</script>
+
+
+
+</body>
+</html>
